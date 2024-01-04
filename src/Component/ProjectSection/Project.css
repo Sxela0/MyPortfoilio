@@ -1,0 +1,40 @@
+.project-container {
+  background: #121212;
+  height: 100%;
+  width: 100%;
+  display: flex; /* I want to ask this line to naman, Why the margin was applied to parent. */
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin: 5rem 0;
+  width: max(70%, 60rem);
+}
+
+.project-heading {
+  color: #fff;
+  text-align: center;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 5.85rem; /* 150% */
+  letter-spacing: 0.1875rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .inner-project-container {
+    margin: 3rem 0;
+  }
+
+  .project-heading {
+    font-size: 2rem;
+    line-height: 3.5rem; /* Adjust as needed */
+  }
+}

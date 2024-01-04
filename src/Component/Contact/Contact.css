@@ -1,0 +1,134 @@
+.contact-container {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #121212;
+  padding: 3rem;
+}
+
+.container-inner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  height: 70%;
+  width: 50%;
+  /* border: 1px solid red; */
+}
+
+.container-inner-container h3 {
+  color: #fff8f8;
+  text-align: center;
+  font-size: 2.6rem;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 0.1875rem;
+  text-transform: uppercase;
+}
+
+.container-inner-container h3::after {
+  content: '';
+  display: block;
+  width: 5rem;
+  height: 0.25rem;
+  background-color: #7843e5;
+  margin: 1rem auto;
+}
+
+.container-inner-container p {
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.08rem; /* 160% */
+}
+.container-inner-container form {
+  background-color: #fff8f8;
+  border-radius: 0.6rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 85%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.form-group label {
+  color: #666;
+  font-size: 0.9125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.365rem; /* 149.589% */
+  letter-spacing: 0.0625rem;
+}
+
+.form-group input {
+  height: 3rem;
+  border-radius: 0.5rem;
+  border-radius: 0.3125rem;
+  border: 1px solid #ebebeb;
+  background: #f0f0f0;
+  color: #000;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  padding-left: 1rem;
+  outline: none;
+}
+
+.form-group textarea {
+  height: 10rem;
+  border-radius: 0.5rem;
+  border-radius: 0.3125rem;
+  border: 1px solid #ebebeb;
+  background: #f0f0f0;
+  color: #000;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  outline: none;
+}
+
+.submit-button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 1rem 0.4rem;
+  }
+
+  .container-inner-container {
+    width: 90%;
+    padding: 0rem;
+  }
+  .container-inner-container form {
+    width: 100%;
+  }
+
+  .container-inner-container h3 {
+    font-size: 2rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+  }
+
+  .submit-button {
+    justify-content: center;
+  }
+}
